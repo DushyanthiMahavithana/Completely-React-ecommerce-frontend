@@ -1,0 +1,49 @@
+.shopBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.header {
+    background-size: cover;
+    background-position: right;
+    padding: 2rem;
+    color: white;
+    height: 100%; 
+    width: 100%; 
+    text-align: right;
+    
+}
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: right;
+    margin-right:65px;
+}
+.header p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: right;
+    margin-right:65px;
+    color: white;
+}
+  
+.header button {
+    background-color: #FFD700;
+    color: rgb(15, 14, 14);
+    border-radius: 50px;
+    border: none;
+    padding: 12px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right:65px;
+    
+    
+}
+.header button:hover {
+    background-color: black;
+    color: #DAA520  ;
+}
