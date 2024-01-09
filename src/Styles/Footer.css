@@ -1,0 +1,21 @@
+.footer {
+    background-color: #FFD700;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  .socialMedia {
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    font-size: 40px;
+    margin: 0 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #888;
+  }
+  
