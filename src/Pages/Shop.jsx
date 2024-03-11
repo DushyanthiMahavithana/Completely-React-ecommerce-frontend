@@ -12,6 +12,9 @@ import MenImage3 from '../Images/men3.jpg'
 import MenImage4 from '../Images/men4.jpg'
 import MenImage5 from '../Images/men5.jpg'
 import '../Styles/Shop.css'
+import PopularHandbags from '../Components/PopularHandbags'
+import { popularhandbagsdata } from '../Helpers/popularhandbagsdata'
+
 
 
 function Shop() {
@@ -37,8 +40,17 @@ function Shop() {
             </div>
             <div className='latestCollection'>
                 <h2>Latest Design Ladies Handbags</h2>
-                
+                {popularhandbagsdata.map((handbagP, index) => {
+                    return (
+                    <PopularHandbags
+                    key={index} 
+                    name={handbagP.name}
+                    price={handbagP.price}
+                    />
+                    );
+                })}
             </div>
+
         
         </div>
         <div className='backpacks'>
