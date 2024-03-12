@@ -1,16 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import '../Styles/Shop.css'
 
-function PopularHandbags({name,price}) {
+function PopularHandbags({image,name,price}) {
   return (
-    <div className=''>
-        
+    <div className='bagBox'>
+        <div style={{backgroundImage: `url(${image})`}}></div>
+        <div className='boxDetails'>
         <p className='name'>
             {name}
         </p>
         <p className='price'>
-            {price}
+            Rs {price}
         </p>
-      
+      </div>
     </div>
   );
 }

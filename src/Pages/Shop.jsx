@@ -24,7 +24,7 @@ function Shop() {
             <div className='header' style={{backgroundImage: `url(${ShopBanner})`}}>
                 <h1>Best Designer Handbags to <br></br>Invest Now</h1>
                 <p>Find the latest styles of Women's Handbags and more <br></br> from top fashion designers today!</p>
-                <Link to="/recipes">
+                <Link to="/#">
                     <button>LATEST DESIGNS</button>
                 </Link>
             </div>
@@ -40,15 +40,18 @@ function Shop() {
             </div>
             <div className='latestCollection'>
                 <h2>Latest Design Ladies Handbags</h2>
+                <div className='handbagCards'>
                 {popularhandbagsdata.map((handbagP, index) => {
                     return (
                     <PopularHandbags
                     key={index} 
+                    image={handbagP.image}
                     name={handbagP.name}
                     price={handbagP.price}
                     />
                     );
                 })}
+                </div>
             </div>
 
         

@@ -1,11 +1,11 @@
 .navbar{
     width: 100%;
-    height: 100px;
+    height: 5vw;
     display: flex;
     justify-content: space-between;
     background-color: #171717;
     flex-direction: row;
-    margin-top: -10px;
+    position: fixed;
 }
 .navbar .logo {
     display: flex;
@@ -35,44 +35,5 @@
 .hidden-menu-icon{
     display: none;
 }
-@media only screen and (max-width: 600px) {
-    .menu-icon{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .navbar #open .hidden-menu-icon {
-      display: flex;
-      position: absolute;
-      top: 100px; 
-      right: 8px;
-      width: 200px;
-      padding: 20px;
-      box-shadow: 0 0 10px #171717;
-      background-color: #171717;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .navbar #close .hidden-menu-icon {
-      display: none;
-    }
-    .hidden-menu-icon a{
-      display: flex;
-      text-decoration: none;
-      color: #FFD700; 
-     
-    }
-    .hidden-menu-icon a:hover {
-      color: #DAA520;
-    }
-    .navbar .menu {
-      display: none;
-    }
-    .menu a {
-      display: block;
-      margin: 5px 0;
-    }
-}
-  
+
   
