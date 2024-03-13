@@ -14,6 +14,7 @@ import MenImage5 from '../Images/men5.jpg'
 import '../Styles/Shop.css'
 import PopularHandbags from '../Components/PopularHandbags'
 import { popularhandbagsdata } from '../Helpers/popularhandbagsdata'
+import { popularbackpacksdata } from '../Helpers/popularbackpacksdata'
 
 
 
@@ -32,7 +33,7 @@ function Shop() {
         <div className='womenBags'>
             <h1 className='second_header'><i>"Introducing our newest line of handbags,<br></br> now available at your favorite retailers</i></h1>
             <div className='secondImagesSection'>
-            <   div className='womenBagsImages'><img src={WomenImage1}></img></div>
+            <div className='womenBagsImages'><img src={WomenImage1}></img></div>
                 <div className='womenBagsImages'><img src={WomenImage4}></img></div>
                 <div className='womenBagsImages'><img src={WomenImage2}></img></div>
                 <div className='womenBagsImages'><img src={WomenImage3}></img></div>
@@ -40,7 +41,7 @@ function Shop() {
             </div>
             <div className='latestCollection'>
                 <h2>Latest Design Ladies Handbags</h2>
-                <div className='handbagCards'>
+                <div className='allbagCards'>
                 {popularhandbagsdata.map((handbagP, index) => {
                     return (
                     <PopularHandbags
@@ -67,6 +68,18 @@ function Shop() {
             </div>
             <div className='latestCollection'>
                 <h2>Latest Design Backpacks</h2>
+                <div className='allbagCards'>
+                {popularbackpacksdata.map((handbagP, index) => {
+                    return (
+                    <PopularHandbags
+                    key={index} 
+                    image={handbagP.image}
+                    name={handbagP.name}
+                    price={handbagP.price}
+                    />
+                    );
+                })}
+                </div>
                 
             </div>
 

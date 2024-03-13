@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../Styles/Shop.css'
 
-function PopularHandbags({image,name,price}) {
+function PopularBackpacks({image,name,price}) {
   return (
     <div className='bagBox'>
         <div style={{backgroundImage: `url(${image})`}}></div>
@@ -21,4 +21,4 @@ function PopularHandbags({image,name,price}) {
   );
 }
 
-export default PopularHandbags;
+export default PopularBackpacks;
