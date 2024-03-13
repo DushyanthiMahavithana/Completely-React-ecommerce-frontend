@@ -14,7 +14,7 @@ function PopularBackpacks({image,name,price}) {
             Rs {price}
         </p>
         <Link to="/#">
-          <button className='btn'>LATEST DESIGNS</button>
+          <button className='btn'>ADD TO CART</button>
         </Link>
       </div>
     </div>

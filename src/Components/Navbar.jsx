@@ -17,15 +17,14 @@ function Navbar() {
         <img src={Logo}></img>
         <div className='hidden-menu-icon'>
           <Link to='/'>Shop</Link>
-          <Link to='/handbags'>Hand Bags</Link>
-          <Link to='/backpacks'>Back Packs </Link>
+          <Link to='/cart'>Cart</Link>
         </div>
       </div>
       
       <div className='menu'>
         <Link to='/'>Shop</Link>
-        <Link to='/handbags'>Hand Bags</Link>
-        <Link to='/backpacks'>Back Packs </Link>
+        <Link to='/cart'>Cart</Link>
+        
       </div>
 
       <div className='menu-icon'>
